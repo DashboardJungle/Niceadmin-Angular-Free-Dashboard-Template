@@ -1,2 +1,2 @@
-# Modernize-Angular-pro
-Modernize Angular Admin Dashboard
+# Niceadmin-Angular-Free-Dashboard-Template
+Niceadmin Angular Admin Dashboard
