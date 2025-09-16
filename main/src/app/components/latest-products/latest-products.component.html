@@ -1,0 +1,22 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content>
+    <mat-card-title class="m-b-12 f-s-18">Latest Products</mat-card-title>
+
+    <ul class="list-unstyled m-0">
+      @for(stat of stats; track stat.title) {
+      <li class="hstack justify-content-between p-y-12 b-b-1">
+        <div class="hstack gap-16">
+          <img [src]="stat.img" alt="product" width="40" height="40" class="rounded-7 object-fit-cover">
+          <div>
+            <h6 class="f-s-14">{{ stat.title }}</h6>
+
+          </div>
+        </div>
+        <p class="text-muted m-y-0 f-s-14">
+          {{ stat.subtitle }}
+        </p>
+      </li>
+      }
+    </ul>
+  </mat-card-content>
+</mat-card>

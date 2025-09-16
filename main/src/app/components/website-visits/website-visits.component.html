@@ -1,0 +1,40 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content class="p-b-0">
+    <div class="vstack align-items-start gap-16">
+      <div class="hstack justify-content-between flex-wrap">
+        <div class="vstack gap-8">
+          <mat-card-title class="f-s-18">Website Visits</mat-card-title>
+          <div class="hstack gap-8">
+            <h4 class="f-s-24">$395.7k</h4>
+            <span class="badge bg-light-success p-x-8 p-y-2 rounded-pill text-success f-s-12 f-w-500">+18%</span>
+            <span class="text-muted f-s-12">than last year</span>
+          </div>
+        </div>
+        <div class="hstack gap-24">
+          <div class="hstack gap-16">
+            <div class="hstack gap-8"><span class="icon-8 rounded-circle bg-primary"></span><span class="f-s-14">Site
+                A</span></div>
+            <div class="hstack gap-8"><span class="icon-8 rounded-circle bg-secondary"></span><span class="f-s-14">Site
+                B</span></div>
+          </div>
+          <mat-form-field class="theme-select hide-hint" appearance="outline">
+            <mat-select value="mar">
+              @for(month of months; track month.viewValue ) {
+              <mat-option [value]="month.value">
+                {{ month.viewValue }}
+              </mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <apx-chart class="w-100" [series]="WebsiteVisitsChart.series" [chart]="WebsiteVisitsChart.chart"
+        [colors]="WebsiteVisitsChart.colors" [dataLabels]="WebsiteVisitsChart.dataLabels"
+        [legend]="WebsiteVisitsChart.legend" [tooltip]="WebsiteVisitsChart.tooltip"
+        [plotOptions]="WebsiteVisitsChart.plotOptions" [grid]="WebsiteVisitsChart.grid"
+        [xaxis]="WebsiteVisitsChart.xaxis" [yaxis]="WebsiteVisitsChart.yaxis" [labels]="WebsiteVisitsChart.labels"
+        [stroke]="WebsiteVisitsChart.stroke">
+      </apx-chart>
+    </div>
+  </mat-card-content>
+</mat-card>

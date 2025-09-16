@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "../variables" as *;
+
+html {
+  @include mat.theme(
+    (
+      color: mat.$azure-palette,
+      typography: "Inter",
+    )
+  );
+
+  @include mat.theme-overrides(
+    (
+      error: rgb(239, 68, 68),
+      body-medium-size: 14px,
+      body-large-size: 14px,
+      outline-variant: #e0e6eb,
+      level1: "rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px",
+      level2: "rgba(145, 158, 171, 0.3) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px",
+      level3: "rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,rgba(145, 158, 171, 0.12) 0px 12px 24px -4px",
+      level4: 0 15px 30px rgba(0,0,0,0.12)
+    )
+  );
+}

@@ -1,0 +1,25 @@
+html .light-theme {
+  color-scheme: light;
+  --mat-sys-corner-small: 12px;
+  --mat-sys-corner-medium: 16px;
+  --mat-sys-background: #F5F5F5;
+  --mat-sys-surface-bright: #f2f6fa;
+  --mat-sys-surface: #fff;
+  --mat-sys-surface-container: #fff;
+  --mat-sys-surface-container-low: #fff;
+  --mat-sys-surface-container-lowest: #686e6b;
+  --mat-sys-on-background: #030E09;
+  --mat-sys-outline: #e5e6e6;
+  --mat-sys-outline-variant: #e5e6e6;
+  --mdc-outlined-text-field-hover-outline-color: var(--mat-sys-primary);
+  --mdc-checkbox-unselected-hover-state-layer-color: var(--mat-sys-primary);
+  --mat-menu-item-hover-state-layer-color: var(--mat-sys-primary-fixed-dim);
+  --mat-standard-button-toggle-state-layer-color: var(--mat-sys-primary-fixed-dim);
+  --mat-option-focus-state-layer-color: var(--mat-sys-primary-fixed-dim);
+  --mat-option-hover-state-layer-color: var(--mat-sys-primary-fixed-dim);
+  --mdc-switch-unselected-track-color: var(--mat-sys-primary-fixed-dim);
+  --mat-stepper-header-focus-state-layer-color: var(--mat-sys-primary-fixed-dim);
+  --mat-stepper-header-hover-state-layer-color: var(--mat-sys-primary-fixed-dim);
+  --mdc-dialog-supporting-text-color: var(--mat-sys-on-background);
+  --mat-expansion-header-hover-state-layer-color: var(--mat-sys-primary-fixed-dim);
+}
